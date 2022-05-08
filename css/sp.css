@@ -1,0 +1,14 @@
+@media screen and (max-width: 954px) {
+    .hero-descriptions h1 {
+        font-size: 36px;
+    }
+    .hero-descriptions p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: none;
+    }
+}
