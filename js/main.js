@@ -18,4 +18,6 @@ company.on("click", () => {
 
 $(".menuBtn").on("click", function () {
     $(this).toggleClass("active");
+    $(".sideBar").toggleClass("active");
+    $(".sideBar-inner").toggleClass("active");
 });

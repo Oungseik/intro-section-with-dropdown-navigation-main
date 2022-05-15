@@ -5,7 +5,7 @@
 :root {
     --almost-white: hsl(0, 0%, 98%);
     --medium-gray: 0 0% 41%;
-    --almost-black: hsl(0, 0%, 8%);
+    --almost-black: 0 0% 8%;
 }
 
 body {
@@ -16,7 +16,7 @@ body {
 h1 {
     font-size: 56px;
     line-height: 1;
-    color: var(--almost-black);
+    color: hsl(var(--almost-black));
 }
 
 p {
@@ -133,6 +133,10 @@ i.planning {
     border: 1px solid hsl(var(--medium-gray));
 }
 
+.sideBar {
+    display: none;
+}
+
 /* ============================== */
 /* start of hero Section */
 /* ============================== */
@@ -168,7 +172,7 @@ i.planning {
 a.learn-more {
     width: fit-content;
     text-decoration: none;
-    background: var(--almost-black);
+    background: hsl(var(--almost-black));
     color: var(--almost-white);
     border: 1px solid var(--almost-white);
     padding: 10px 20px;
@@ -178,8 +182,8 @@ a.learn-more {
 
 a.learn-more:hover {
     background: var(--almost-white);
-    color: var(--almost-black);
-    border: 1px solid var(--almost-black);
+    color: hsl(var(--almost-black));
+    border: 1px solid hsl(var(--almost-black));
 }
 
 .hero-right img {
