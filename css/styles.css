@@ -4,7 +4,7 @@
 
 :root {
     --almost-white: hsl(0, 0%, 98%);
-    --medium-gray: hsl(0, 0%, 41%);
+    --medium-gray: 0 0% 41%;
     --almost-black: hsl(0, 0%, 8%);
 }
 
@@ -36,8 +36,14 @@ ul {
 /* Start of icon class sections */
 /* ============================== */
 
-i.arrow {
+i {
     display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin-right: 6px;
+}
+
+i.arrrow {
     height: 12px;
     width: 14px;
 }
@@ -49,6 +55,24 @@ i.arrow.up {
 i.arrow.down {
     background: url("../images/icon-arrow-down.svg") no-repeat center;
 }
+
+i.todo {
+    background: url("../images/icon-todo.svg") no-repeat center;
+}
+
+i.calender {
+    background: url("../images/icon-calendar.svg") no-repeat center;
+}
+
+i.remainders {
+    background: url("../images/icon-reminders.svg") no-repeat center;
+}
+
+i.planning {
+    background: url("../images/icon-planning.svg") no-repeat center;
+}
+
+/* i. */
 
 /* ============================== */
 /* End of icon class sections */
@@ -81,15 +105,15 @@ i.arrow.down {
     align-items: center;
 }
 
-.header-left ul {
+.nav-bar {
     display: flex;
     gap: 20px;
-    color: var(--medium-gray);
+    color: hsl(var(--medium-gray));
 }
 
 .header-left a {
     text-decoration: none;
-    color: var(--medium-gray);
+    color: hsl (var(--medium-gray));
 }
 
 /* rigth side of the header bar */
@@ -100,13 +124,13 @@ i.arrow.down {
 
 .header-right a {
     text-decoration: none;
-    color: var(--medium-gray);
+    color: hsl(var(--medium-gray));
     padding: 10px 20px;
     border-radius: 12px;
 }
 
 .header-right a.register {
-    border: 1px solid var(--medium-gray);
+    border: 1px solid hsl(var(--medium-gray));
 }
 
 /* ============================== */
@@ -137,7 +161,7 @@ i.arrow.down {
 }
 
 .hero-descriptions p {
-    color: var(--medium-gray);
+    color: hsl(var(--medium-gray));
     max-width: 30rem;
 }
 
@@ -170,4 +194,22 @@ a.learn-more:hover {
 
 .hero-right .mobile-img {
     display: none;
+}
+
+/* features box */
+
+.features-wrapper {
+    position: relative;
+}
+
+.features-wrapper .feature-items {
+    width: 150px;
+    position: absolute;
+    left: -70%;
+    background-color: white;
+    padding: 16px;
+    border-radius: 4px;
+    box-shadow: 1px 8px 8px 8px hsl(var(--medium-gray) / 0.4);
+    display: none;
+    line-height: 1.5;
 }
