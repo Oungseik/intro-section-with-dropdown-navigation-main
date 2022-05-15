@@ -205,11 +205,30 @@ a.learn-more:hover {
 .features-wrapper .feature-items {
     width: 150px;
     position: absolute;
+    top: 40px;
     left: -70%;
     background-color: white;
     padding: 16px;
     border-radius: 4px;
     box-shadow: 1px 8px 8px 8px hsl(var(--medium-gray) / 0.4);
     display: none;
-    line-height: 1.5;
+    line-height: 2;
+}
+
+/* company box */
+
+.company-wrapper {
+    position: relative;
+}
+
+.company-wrapper .company-toggleBox {
+    width: 120px;
+    position: absolute;
+    top: 40px;
+    background-color: white;
+    box-shadow: 1px 8px 8px 8px hsl(var(--medium-gray) / 0.4);
+    border-radius: 4px;
+    display: none;
+    padding: 16px;
+    line-height: 2;
 }
