@@ -9,6 +9,79 @@
 
 @media screen and (max-width: 768px) {
     .container {
+        padding-inline: 0;
+    }
+
+    .header {
+        padding-inline: 20px;
+    }
+    .header-left ul {
         display: none;
+    }
+
+    .header-right {
+        display: none;
+    }
+
+    .header .menuBtn {
+        display: block;
+        height: 28px;
+        width: 36px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4px;
+    }
+
+    .menuBtn .blackLine {
+        width: 100%;
+        height: 4px;
+        background: var(--almost-black);
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        padding-inline: 0;
+        margin-inline: 0;
+        text-align: center;
+        row-gap: 48px;
+    }
+
+    .hero-descriptions {
+        padding-inline: 16px;
+        row-gap: 20px;
+    }
+
+    .hero-descriptions h1 {
+        font-size: 32px;
+    }
+
+    .hero-descriptions p {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .hero-descriptions a {
+        margin-inline: auto;
+    }
+
+    .hero-left {
+        row-gap: 48px;
+    }
+
+    h1 br {
+        display: none;
+    }
+
+    .hero-right .desktop-img {
+        display: none;
+    }
+
+    .hero-right .mobile-img {
+        display: block;
+    }
+
+    .partners {
+        padding-inline: 16px;
     }
 }

@@ -10,11 +10,13 @@
 
 body {
     font-family: "Epilogue", sans-serif;
+    height: 100vh;
 }
 
 h1 {
     font-size: 56px;
     line-height: 1;
+    color: var(--almost-black);
 }
 
 p {
@@ -56,11 +58,15 @@ i.arrow.down {
     padding: 32px 5%;
 }
 
-.navigation {
+.header {
     bottom: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.header .menuBtn {
+    display: none;
 }
 
 .logo {
@@ -68,38 +74,38 @@ i.arrow.down {
     height: 28px;
 }
 
-/* left side of the navigation bar */
-.nav-left {
+/* left side of the header bar */
+.header-left {
     display: flex;
     gap: 24px;
     align-items: center;
 }
 
-.nav-left ul {
+.header-left ul {
     display: flex;
     gap: 20px;
     color: var(--medium-gray);
 }
 
-.nav-left a {
+.header-left a {
     text-decoration: none;
     color: var(--medium-gray);
 }
 
-/* rigth side of the navigation bar */
-.nav-right {
+/* rigth side of the header bar */
+.header-right {
     display: flex;
     gap: 10px;
 }
 
-.nav-right a {
+.header-right a {
     text-decoration: none;
     color: var(--medium-gray);
     padding: 10px 20px;
     border-radius: 12px;
 }
 
-.nav-right a.register {
+.header-right a.register {
     border: 1px solid var(--medium-gray);
 }
 
@@ -159,4 +165,8 @@ a.learn-more:hover {
 .partners {
     display: flex;
     gap: 5%;
+}
+
+.hero-right .mobile-img {
+    display: none;
 }

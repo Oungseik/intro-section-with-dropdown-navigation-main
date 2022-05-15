@@ -28,9 +28,9 @@
     </head>
     <body>
         <div class="container">
-            <!-- start of navigation bar section -->
-            <nav class="navigation">
-                <div class="nav-left">
+            <!-- start of header bar section -->
+            <header class="header">
+                <div class="header-left">
                     <div class="logo">
                         <img src="./images/logo.svg" alt="logo" />
                     </div>
@@ -47,12 +47,18 @@
                         <li><a href="#">About</a></li>
                     </ul>
                 </div>
-                <ul class="nav-right">
+                <ul class="header-right">
                     <li><a class="login" href="#">Login</a></li>
                     <li><a href="#" class="register">Register</a></li>
                 </ul>
-            </nav>
-            <!-- end of navigation bar section -->
+
+                <div class="menuBtn">
+                    <div class="blackLine"></div>
+                    <div class="blackLine"></div>
+                    <div class="blackLine"></div>
+                </div>
+            </header>
+            <!-- end of header bar section -->
 
             <!-- start of main section -->
             <main class="hero">
@@ -94,7 +100,16 @@
                     </div>
                 </div>
                 <div class="hero-right">
-                    <img src="./images/image-hero-desktop.png" alt="" />
+                    <img
+                        class="desktop-img"
+                        src="./images/image-hero-desktop.png"
+                        alt="background image"
+                    />
+                    <img
+                        class="mobile-img"
+                        src="./images/image-hero-mobile.png"
+                        alt="background image"
+                    />
                 </div>
             </main>
         </div>
