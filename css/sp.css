@@ -75,6 +75,7 @@
     }
 
     .hero-descriptions p {
+        max-width: none;
         text-align: center;
         font-size: 15px;
     }
@@ -97,9 +98,12 @@
 
     .hero-right .mobile-img {
         display: block;
+        margin: auto;
     }
 
     .partners {
         padding-inline: 16px;
+        justify-content: space-between;
+        align-items: center;
     }
 }

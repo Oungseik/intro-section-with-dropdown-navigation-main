@@ -165,6 +165,7 @@ a.learn-more:hover {
 .partners {
     display: flex;
     gap: 5%;
+    justify-content: space-between;
 }
 
 .hero-right .mobile-img {
